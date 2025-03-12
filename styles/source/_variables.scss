@@ -1,0 +1,23 @@
+$mainTextColor: #D42401;
+$mainColor: #FED8B5;
+$secondaryTextColor: #502314;
+
+@mixin centerVertically() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin centerHorizontally() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin spaceAround() {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin spaceBetween() {
+    display: flex;
+    justify-content: space-between;
+}

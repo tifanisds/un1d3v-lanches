@@ -1,0 +1,33 @@
+@use "../variables" as *;
+
+header {
+    .logo {
+        line-height: 1.2;
+        @include centerVertically();
+        @include centerHorizontally();
+        
+
+        img {
+            width: 87px;
+            height: 87px;
+        }
+
+        .brand-name {
+            margin-left: 10px;
+            .title {
+                font-size: 28px;
+                font-weight: 700;
+                color: $mainTextColor;
+                margin-bottom: 0;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                font-weight: 700;
+                color: $secondaryTextColor;
+                margin-left: 75px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
