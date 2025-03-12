@@ -1,75 +1,83 @@
 @use "../variables" as *;
 
 .main {
-    .card {
-        border: none;
-        border-radius: 12px 12px 0 0;
+    @include centerHorizontally();
+    flex-direction: column;
+    .line {
+        @include centerHorizontally();
 
-        .card-body {
-            padding: 0;
-            width: 300px;
-            height: 296px;
-            background-color: $mainColor;
+        .card {
+            border: none;
             border-radius: 12px 12px 0 0;
-            box-shadow: 0px 0px 5px #00000040;
-
-            .img {
-                height: 204px;
-                background-color: #FFFFFF;
-                width: 100%;
+            margin: 10px 15px 10px 15px;
+            
+    
+            .card-body {
+                padding: 0;
+                width: 300px;
+                height: 296px;
+                background-color: $mainColor;
                 border-radius: 12px 12px 0 0;
-                @include centerHorizontally(); 
-                @include centerVertically(); 
-
-                img {
-                    width: 215px;
-                    height: 161px;
+                box-shadow: 0px 0px 5px #00000040;
+    
+                .img {
+                    height: 204px;
+                    background-color: #FFFFFF;
+                    width: 100%;
+                    border-radius: 12px 12px 0 0;
+                    @include centerHorizontally(); 
+                    @include centerVertically(); 
+    
+                    img {
+                        width: 215px;
+                        height: 161px;
+                    }
                 }
-            }
-
-            .burger-info {
-                margin: 10px 20px 10px 20px;
-                @include spaceBetween();
-                @include centerVertically();
-
-                .title {
-                    font-size: 20px;
-                    font-weight: 800;
-                    color: $mainTextColor;
-                    margin-bottom: 0;
-                }
-
-                .description {
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: $secondaryTextColor;
-                    margin-bottom: 0;
-                }
-
-                .price {
+    
+                .burger-info {
+                    margin: 10px 20px 10px 20px;
+                    @include spaceBetween();
                     @include centerVertically();
     
-                    .dollar-sign {
+                    .title {
+                        font-size: 20px;
+                        font-weight: 800;
+                        color: $mainTextColor;
+                        margin-bottom: 0;
+                    }
+    
+                    .description {
+                        font-size: 14px;
+                        font-weight: 600;
                         color: $secondaryTextColor;
-                        font-size: 18px;
-                        font-weight: 800;
                         margin-bottom: 0;
                     }
     
-                    .value {
-                        color: $mainTextColor;
-                        font-size: 39px;
-                        font-weight: 800;
+                    .price {
+                        @include centerVertically();
+        
+                        .dollar-sign {
+                            color: $secondaryTextColor;
+                            font-size: 18px;
+                            font-weight: 800;
+                            margin-bottom: 0;
+                        }
+        
+                        .value {
+                            color: $mainTextColor;
+                            font-size: 39px;
+                            font-weight: 800;
+                        }
+        
+                        .cents {
+                            color: $mainTextColor;
+                            font-size: 18px;
+                            font-weight: 800;
+                            margin-bottom: 0;
+                        }
                     }
-    
-                    .cents {
-                        color: $mainTextColor;
-                        font-size: 18px;
-                        font-weight: 800;
-                        margin-bottom: 0;
-                    }
-                }
-            }      
+                }      
+            }
         }
     }
 }
