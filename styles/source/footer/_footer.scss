@@ -1,0 +1,24 @@
+@use "../variables" as *;
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: $secondaryTextColor;
+
+    .credits {
+        color: #FE9738;
+
+        .bold {
+            font-weight: 800;
+        }
+    }
+
+    .unidev {
+        color: $mainTextColor;
+        font-weight: 800;
+    }
+
+}
