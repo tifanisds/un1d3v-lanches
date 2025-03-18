@@ -17,3 +17,4 @@ destacando seus produtos e promovendo uma experiência de navegação intuitiva 
 - 🔧 Uso de variáveis e mixins do SASS para melhor manutenção do código.
 - 📂 Organização modular dos estilos para facilitar futuras modificações.
 
+![Preview un1d3v-lanches](./assets/img/preview/preview.png)
